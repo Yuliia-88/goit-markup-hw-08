@@ -1,0 +1,12 @@
+//* -----------------Кнопка "Заказать услугу"----------------- */
+.btn {
+    display: inline-block;
+    border-radius: 4px;
+    border: 1px solid transparent;
+    font-family: inherit;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    background-color: var(--primary-button-background);
+    color: var(--main-text-color);
+}

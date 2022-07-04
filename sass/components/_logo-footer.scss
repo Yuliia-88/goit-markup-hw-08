@@ -1,0 +1,12 @@
+.footer__logo {
+    margin-bottom: 20px;
+    display: inline-block;
+}
+
+.logo__change--footer {
+    color: var(--text-white);
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+

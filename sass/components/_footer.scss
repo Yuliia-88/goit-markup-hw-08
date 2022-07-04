@@ -1,0 +1,49 @@
+//* ---------------------Подвал страницы-------------------- */
+.footer__container {
+    position: relative;
+    display: flex;
+    align-items: baseline;
+}
+
+.container-address {
+    margin-right: 70px;
+}
+
+.footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background: var(--second-background-color);
+}
+
+.footer-address__item:not(:last-child) {
+    margin-bottom: 9px;
+}
+
+.footer-address__link {
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.71;
+    color: var(--text-white);
+    & {
+        transition-property: background-color, color, box-shadow;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+}
+
+.footer-address__mail,
+.footer-address__tel {
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.71;
+    color: var(--text-footer-link);
+    & {
+        transition-property: background-color, color, box-shadow;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    &:hover,
+    &:focus {
+        color: var(--text-white);
+    }
+}

@@ -1,0 +1,40 @@
+//* цвет основного текста #212121; */
+//* вторичный цвет текста #757575; */
+//* цвет акцент #2196F3; */
+//* начальный цвет фона #FFFFFF; */
+//* вторичный цвет фона #2F303A; */
+
+//* черный цвет для логотипа в недере #000; */
+//* белый цвет для логотипа и ссылок в футере #fff; */
+//* цвет ссылок в футере rgba(255, 255, 255, 0.6); */
+//* начальнай цвет кнопок #F5F4FA; */
+//* начальный цвет иконок rgb(175, 177, 184);*/
+//* функция распределения времени cubic-bezier(0.4, 0, 0.2, 1);*/
+
+:root {
+    --main-text-color: #212121;
+    --second-text-color: #757575;
+    --accent-color: #2196f3;
+    --primary-background-color: #ffffff;
+    --second-background-color: #2F303A;
+
+    --text-black: #000;
+    --text-white: #fff;
+    --text-footer-link: rgba(255, 255, 255, 0.6);
+    --primary-button-background: #F5F4FA;
+    --primary-color-icon: rgb(175, 177, 184);
+    //* --timing-function: cubic-bezier(0.4, 0, 0.2, 1); */
+
+}
+
+// $main-text-color: #212121;
+// $second-text-color: #757575;
+// $accent-color: #2196f3;
+// $primary-background-color: #ffffff;
+// $second-background-color: #2F303A;
+
+// $text-black: #000;
+// $text-white: #fff;
+// $text-footer-link: rgba(255, 255, 255, 0.6);
+// $primary-button-background: #F5F4FA;
+// $primary-color-icon: rgb(175, 177, 184);
