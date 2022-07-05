@@ -1,18 +1,40 @@
 //* ---------------------Подвал страницы-------------------- */
-.footer__container {
-    position: relative;
-    display: flex;
-    align-items: baseline;
-}
-
-.container-address {
-    margin-right: 70px;
-}
-
 .footer {
     padding-top: 60px;
     padding-bottom: 60px;
     background: var(--second-background-color);
+    @media screen and (min-width: 1200px) {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
+}
+
+.footer__container {
+    flex-wrap: wrap;
+    @media screen and (min-width: 1200px) {
+        position: relative;
+        display: flex;
+        align-items: baseline;
+    }
+}
+
+.footer__container-tablet {
+    @media screen and (min-width: 768px) {
+        // position: relative;
+        display: flex;
+        justify-content: space-around;
+        align-items: baseline;
+    }
+}
+
+.container-address {
+    margin-bottom: 60px;
+    text-align: center;
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 0;
+        margin-right: 70px;
+        text-align: start;
+    }
 }
 
 .footer-address__item:not(:last-child) {

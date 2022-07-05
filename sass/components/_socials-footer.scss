@@ -1,6 +1,14 @@
 .container-soc {
-    padding-top: 12px;
-    width: 206px;
+    // padding-top: 12px;
+    // width: 206px;
+    margin-bottom: 60px;
+    text-align: center;
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 0;
+        padding-top: 12px;
+        width: 206px;
+        text-align: start;
+    }
     &__title {
         display: block;
         margin-bottom: 20px;
