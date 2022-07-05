@@ -1,48 +1,70 @@
 //* ---------------------Наша команда--------------------- */
 .team {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top: 60px;
+    padding-bottom: 60px;
     background: var(--primary-button-background);
+    @media screen and (min-width: 1200px) {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
     &__title {
+        margin-bottom: 30px;
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 1.18;
+        text-align: center;
+        @media screen and (min-width: 1200px) {
             margin-bottom: 50px;
-            font-weight: 700;
             font-size: 36px;
             line-height: 1.17;
-            text-align: center;
         }
+    }
 }
 
 .team-list {
     display: flex;
-    justify-content: space-between;
-        &__item {
-            border-radius: 0px 0px 4px 4px;
-            box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-            border-right: 1px solid var(--primary-background-color);
-            border-bottom: 1px solid var(--primary-background-color);
-            border-left: 1px solid var(--primary-background-color);
-            background: var(--primary-background-color);
+    flex-wrap: wrap;
+    gap: 30px;
+    // justify-content: space-between;
+
+    &__item {
+        width: 100%;
+        border-radius: 0px 0px 4px 4px;
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+        border-right: 1px solid var(--primary-background-color);
+        border-bottom: 1px solid var(--primary-background-color);
+        border-left: 1px solid var(--primary-background-color);
+        background: var(--primary-background-color);
+        @media screen and (min-width: 768px) {
+            width: calc((100% - 30px)/2);
         }
+        @media screen and (min-width: 1200px) {
+            width: calc((100% - 3*30px)/4);
+        }
+    }
     
-        &__group {
-            padding-top: 30px;
+    &__group {
+        padding-top: 30px;
+        padding-bottom: 24px;
+        @media screen and (min-width: 1200px) {
             padding-bottom: 30px;
         }
-    
-        &__title {
-            margin-bottom: 10px;
-            font-weight: 500;
-            font-size: 16px;
-            line-height: 1.19;
-            text-align: center;
-        }
-    
-        &__text {
-            margin-bottom: 16px;
-            font-weight: 400;
-            font-size: 16px;
-            line-height: 1.19;
-            text-align: center;
-            color: var(--second-text-color);
-        }
+    }
+
+    &__title {
+        margin-bottom: 10px;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.19;
+        text-align: center;
+    }
+
+    &__text {
+        margin-bottom: 16px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.19;
+        text-align: center;
+        color: var(--second-text-color);
+    }
 }
