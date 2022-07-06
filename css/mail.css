@@ -99,11 +99,19 @@ body {
 }
 
 .logo {
+  padding-top: 16px;
+  padding-bottom: 16px;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 24px;
   line-height: 1.17;
   color: var(--accent-color);
+}
+@media screen and (min-width: 1200px) {
+  .logo {
+    padding-top: 26px;
+    padding-bottom: 26px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .logo {
@@ -126,7 +134,17 @@ body {
 }
 
 .header__logo {
-  margin-right: 93px;
+  margin-right: 0;
+}
+@media screen and (min-width: 768px) {
+  .header__logo {
+    margin-right: 88px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header__logo {
+    margin-right: 93px;
+  }
 }
 
 .nav {
@@ -138,9 +156,14 @@ body {
           align-items: center;
 }
 .nav__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .nav__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 .nav__item:not(:last-child) {
   margin-right: 50px;
@@ -181,13 +204,29 @@ body {
 }
 
 .address-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   margin-left: auto;
 }
+@media screen and (min-width: 768px) {
+  .address-list {
+    display: block;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .address-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: auto;
+  }
+}
 .address-list__item:not(:last-child) {
-  margin-right: 50px;
+  margin-right: 0;
+}
+@media screen and (min-width: 1200px) {
+  .address-list__item:not(:last-child) {
+    margin-right: 50px;
+  }
 }
 .address-list__mail, .address-list__tel {
   display: -webkit-inline-box;
@@ -332,6 +371,12 @@ body {
 .features {
   padding-top: 60px;
   padding-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .features {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .features-list {
