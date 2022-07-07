@@ -1,5 +1,6 @@
 /* ---------------------Шапка, навигация--------------------- */
 .header {
+    position: relative;
     border-bottom: 1px solid #ECECEC;
     &__menu {
         display: flex;
