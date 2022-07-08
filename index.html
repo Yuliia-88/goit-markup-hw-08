@@ -171,28 +171,28 @@
                 <h2 class="about__title">Чем мы занимаемся</h2>
                 <ul class="about-list list">
                     <li class="about-list__item">
-                        <img class="about-list__photo"
-                        src="./images/box1.jpg" 
-                        alt="Набор кода на клавиатуре" 
-                        width="370">
+                        <picture>
+                            <source srcset="./images/box1.jpg 1x, ./images/box1@2x.jpg 2x" media="(min-width: 1200px)" />
+                            <img class="about-list__photo" src="./images/box1.jpg" alt="Набор кода на клавиатуре" width="370">
+                        </picture>
                         <div class="about-text">
                             <p>Десктопные приложения</p>
                         </div>
                     </li>
                     <li class="about-list__item">
-                        <img class="about-list__photo"
-                        src="./images/box2.jpg" 
-                        alt="Разные виды дизайна" 
-                        width="370">
+                        <picture>
+                            <source srcset="./images/box2.jpg 1x, ./images/box2@2x.jpg 2x" media="(min-width: 1200px)" />
+                            <img class="about-list__photo" src="./images/box2.jpg" alt="Разные виды дизайна" width="370">
+                        </picture>
                         <div class="about-text">
                             <p>Мобильные приложения</p>
                         </div>
                     </li>
                     <li class="about-list__item">
-                        <img class="about-list__photo"
-                        src="./images/box3.jpg" 
-                        alt="Выбор цвета на палитре цветов" 
-                        width="370">
+                        <picture>
+                            <source srcset="./images/box3.jpg 1x, ./images/box3@2x.jpg 2x" media="(min-width: 1200px)" />
+                            <img class="about-list__photo" src="./images/box3.jpg" alt="Выбор цвета на палитре цветов" width="370">
+                        </picture>
                         <div class="about-text">
                             <p>Дизайнерские решения</p>
                         </div>
@@ -207,10 +207,24 @@
                 <h2 class="team__title">Наша команда</h2>
                     <ul class="team-list list">
                         <li class="team-list__item">
-                            <img 
-                            src="./images/card1.jpg" 
-                            alt="Фото Игоря Демьяненко" 
-                            width="270">
+                            <picture>
+                                <source srcset="
+                                                ./images/card1.jpg   1x,
+                                                ./images/card1@2x.jpg 2x
+                                              " 
+                                              media="(min-width: 1200px)" />
+                                <source srcset="
+                                                ./images/card1-tab.jpg    1x,
+                                                ./images/card1-tab@2x.jpg 2x
+                                              " 
+                                              media="(min-width: 768px)" />
+                                <source srcset="
+                                                ./images/card1-mob.jpg    1x,
+                                                ./images/card1-mob@2x.jpg 2x
+                                              " 
+                                              media="(min-width: 320px)" />
+                                <img src="./images/card1.jpg" alt="Фото Игоря Демьяненко" width="100%">
+                            </picture>
                             <div class="team-list__group">
                                 <h3 class="team-list__title">Игорь Демьяненко</h3>
                                 <p class="team-list__text" lang="en">Product Designer</p>
@@ -247,10 +261,21 @@
                             </div>
                         </li>
                         <li class="team-list__item">
-                            <img 
-                            src="./images/card2.jpg" 
-                            alt="Фото Ольги Репиной" 
-                            width="270">
+                            <picture>
+                                <source srcset="
+                                                ./images/card2.jpg   1x,
+                                                ./images/card2@2x.jpg 2x
+                                                " media="(min-width: 1200px)" />
+                                <source srcset="
+                                                ./images/card2-tab.jpg    1x,
+                                                ./images/card2-tab@2x.jpg 2x
+                                                " media="(min-width: 768px)" />
+                                <source srcset="
+                                                ./images/card2-mob.jpg    1x,
+                                                ./images/card2-mob@2x.jpg 2x
+                                                " media="(min-width: 320px)" />
+                                <img src="./images/card2.jpg" alt="Фото Ольги Репиной" width="100%">
+                            </picture>
                             <div class="team-list__group">
                                 <h3 class="team-list__title">Ольга Репина</h3>
                                 <p class="team-list__text" lang="en">Frontend Developer</p>
@@ -287,10 +312,21 @@
                             </div>
                         </li>
                         <li class="team-list__item">
-                            <img 
-                            src="./images/card3.jpg" 
-                            alt="Фото Николая Тарасова" 
-                            width="270">
+                            <picture>
+                                <source srcset="
+                                                ./images/card3.jpg   1x,
+                                                ./images/card3@2x.jpg 2x
+                                                " media="(min-width: 1200px)" />
+                                <source srcset="
+                                                ./images/card3-tab.jpg    1x,
+                                                ./images/card3-tab@2x.jpg 2x
+                                                " media="(min-width: 768px)" />
+                                <source srcset="
+                                                ./images/card3-mob.jpg    1x,
+                                                ./images/card3-mob@2x.jpg 2x
+                                                " media="(min-width: 320px)" />
+                                <img src="./images/card3.jpg" alt="Фото Николая Тарасова" width="100%">
+                            </picture>
                             <div class="team-list__group">
                                 <h3 class="team-list__title">Николай Тарасов</h3>
                                 <p class="team-list__text" lang="en">Marketing</p>
@@ -327,10 +363,21 @@
                             </div>
                         </li>
                         <li class="team-list__item">
-                            <img 
-                            src="./images/card4.jpg" 
-                            alt="Фото Михаила Ермакова" 
-                            width="270">
+                            <picture>
+                                <source srcset="
+                                                ./images/card4.jpg   1x,
+                                                ./images/card4@2x.jpg 2x
+                                                " media="(min-width: 1200px)" />
+                                <source srcset="
+                                                ./images/card4-tab.jpg    1x,
+                                                ./images/card4-tab@2x.jpg 2x
+                                                " media="(min-width: 768px)" />
+                                <source srcset="
+                                                ./images/card4-mob.jpg    1x,
+                                                ./images/card4-mob@2x.jpg 2x
+                                                " media="(min-width: 320px)" />
+                                <img src="./images/card4.jpg" alt="Фото Михаила Ермакова" width="100%">
+                            </picture>
                             <div class="team-list__group">
                                 <h3 class="team-list__title">Михаил Ермаков</h3>
                                 <p class="team-list__text" lang="en">UI Designer</p>

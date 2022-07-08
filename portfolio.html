@@ -24,6 +24,18 @@
         <div class="container header__menu">
             <nav class="nav">
                 <a class="logo header__logo link" lang="en" href="">Web<span class="logo__change">Studio</span></a>
+                <button 
+                type="button" 
+                class="nav__btn" 
+                aria-expanded="false" 
+                aria-controls="menu-container" 
+                data-menu-button>
+                    <svg width="40" height="40" aria-label="Переключатель мобильного меню" class="nav__btn-menu">
+                        <use href="./images/icons.svg#icon-menu" class="nav__menu-icon"></use>
+                        <use href="./images/icons.svg#icon-close-menu" class="nav__menu-close"></use>
+                    </svg>
+                </button>
+                
                 <ul class="nav__list list">
                     <li class="nav__item"><a href="./index.html" class="nav__link link">Студия</a></li>
                     <li class="nav__item"><a href="" class="nav__link link current">Портфолио</a></li>
@@ -52,8 +64,52 @@
         </div>
     
     </header>
-
     <main>
+        <!--Мобильное меню-->
+        <section class="mob-menu">
+            <div class="mob-menu__container" id="menu-container" data-menu>
+        
+                <div class="mob-menu__nav">
+                    <ul class="mob-nav list">
+                        <li class="mob-nav__item">
+                            <a href="./index.html" class="mob-nav__link mob-nav__current link">Студия</a>
+                        </li>
+                        <li class="mob-nav__item">
+                            <a href="./portfolio.html" class="mob-nav__link link">Портфолио</a>
+                        </li>
+                        <li class="mob-nav__item">
+                            <a href="./contacts.html" class="mob-nav__link link">Контакты</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="mob-menu__wrap">
+                    <ul class="mob-contacts list">
+                        <li class="mob-contacts__item">
+                            <a href="tel:+380961111111" class="mob-contacts__link-tel link">+380 96 111 1111</a>
+                        </li>
+                        <li class="mob-contacts__item">
+                            <a href="mailto:info@devstudio.com" class="mob-contacts__link-mail link">info@devstudio.com</a>
+                        </li>
+                    </ul>
+                    <ul class="mob-social list">
+                        <li class="mob-social__item">
+                            <a href="/" class="mob-social__link link">Instagram</a>
+                        </li>
+                        <li class="mob-social__item">
+                            <a href="/" class="mob-social__link link">Twitter</a>
+                        </li>
+                        <li class="mob-social__item">
+                            <a href="/" class="mob-social__link link">Facebook</a>
+                        </li>
+                        <li class="mob-social__item">
+                            <a href="/" class="mob-social__link link">LinkedIn</a>
+                        </li>
+                    </ul>
+                </div>
+        
+            </div>
+        </section>
+
         <!--Портфолио-->
         <section class="portfolio">
             <div class="container">
@@ -70,7 +126,21 @@
                     <li class="portfolio-projects-item">
                         <a class="portfolio-projects-link link" href="" target="_blank" rel="noreferrer noopener nofollow">
                             <div class="portfolio-projects-thumb">
-                                <img src="./images/project1.jpg" alt="Открытый ноутбук" width="370">
+                                <picture>
+                                    <source srcset="
+                                            ./images/project1.jpg    1x, 
+                                            ./images/project1@2x.jpg 2x
+                                            " media="(min-width: 1200px)" />
+                                    <source srcset="
+                                            ./images/project1-tab.jpg    1x,
+                                            ./images/project1-tab@2x.jpg 2x
+                                        " media="(min-width: 768px)" />
+                                    <source srcset="
+                                            ./images/project1-mob.jpg    1x,
+                                            ./images/project1-mob@2x.jpg 2x
+                                        " media="(min-width: 320px)" />
+                                    <img src="./images/project1.jpg" alt="Открытый ноутбук" width="370">
+                                </picture>
                                 <div class="portfolio-projects-overlay">
                                     <p class="portfolio-projects-overlay-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и
                                         сервисов. Все это позволит посетителю получить
@@ -86,7 +156,21 @@
                     <li class="portfolio-projects-item">
                         <a class="portfolio-projects-link link" href="" target="_blank" rel="noreferrer noopener nofollow">
                             <div class="portfolio-projects-thumb">
-                                <img src="./images/project2.jpg" alt="Два баскетболиста" width="370">
+                                <picture>
+                                    <source srcset="
+                                        ./images/project2.jpg    1x, 
+                                        ./images/project2@2x.jpg 2x
+                                        " media="(min-width: 1200px)" />
+                                    <source srcset="
+                                        ./images/project2-tab.jpg    1x,
+                                        ./images/project2-tab@2x.jpg 2x
+                                    " media="(min-width: 768px)" />
+                                    <source srcset="
+                                        ./images/project2-mob.jpg    1x,
+                                        ./images/project2-mob@2x.jpg 2x
+                                    " media="(min-width: 320px)" />
+                                    <img src="./images/project2.jpg" alt="Два баскетболиста" width="370">
+                                </picture>
                                 <div class="portfolio-projects-overlay">
                                     <p class="portfolio-projects-overlay-text">Ресурс предлагает комплексные предложения с разным уровнем
                                         функционала и
@@ -103,7 +187,21 @@
                     <li class="portfolio-projects-item">
                         <a class="portfolio-projects-link link" href="" target="_blank" rel="noreferrer noopener nofollow">
                             <div class="portfolio-projects-thumb">
-                                <img src="./images/project3.jpg" alt="Логотип ресторана" width="370">
+                                <picture>
+                                    <source srcset="
+                                        ./images/project3.jpg    1x, 
+                                        ./images/project3@2x.jpg 2x
+                                        " media="(min-width: 1200px)" />
+                                    <source srcset="
+                                        ./images/project3-tab.jpg    1x,
+                                        ./images/project3-tab@2x.jpg 2x
+                                    " media="(min-width: 768px)" />
+                                    <source srcset="
+                                        ./images/project3-mob.jpg    1x,
+                                        ./images/project3-mob@2x.jpg 2x
+                                    " media="(min-width: 320px)" />
+                                    <img src="./images/project3.jpg" alt="Логотип ресторана" width="370">
+                                </picture>
                                 <div class="portfolio-projects-overlay">
                                     <p class="portfolio-projects-overlay-text">Ресурс предлагает комплексные предложения с разным уровнем
                                         функционала и
@@ -120,7 +218,21 @@
                     <li class="portfolio-projects-item">
                         <a class="portfolio-projects-link link" href="" target="_blank" rel="noreferrer noopener nofollow">
                             <div class="portfolio-projects-thumb">
-                                <img src="./images/project4.jpg" alt="Наушники" width="370">
+                                <picture>
+                                    <source srcset="
+                                        ./images/project4.jpg    1x, 
+                                        ./images/project4@2x.jpg 2x
+                                        " media="(min-width: 1200px)" />
+                                    <source srcset="
+                                        ./images/project4-tab.jpg    1x,
+                                        ./images/project4-tab@2x.jpg 2x
+                                    " media="(min-width: 768px)" />
+                                    <source srcset="
+                                        ./images/project4-mob.jpg    1x,
+                                        ./images/project4-mob@2x.jpg 2x
+                                    " media="(min-width: 320px)" />
+                                    <img src="./images/project4.jpg" alt="Наушники" width="370">
+                                </picture>
                                 <div class="portfolio-projects-overlay">
                                     <p class="portfolio-projects-overlay-text">Ресурс предлагает комплексные предложения с разным уровнем
                                         функционала и
@@ -137,7 +249,21 @@
                     <li class="portfolio-projects-item">
                         <a class="portfolio-projects-link link" href="" target="_blank" rel="noreferrer noopener nofollow">
                             <div class="portfolio-projects-thumb">
-                                <img src="./images/project5.jpg" alt="Две коробки" width="370">
+                                <picture>
+                                    <source srcset="
+                                        ./images/project5.jpg    1x, 
+                                        ./images/project5@2x.jpg 2x
+                                        " media="(min-width: 1200px)" />
+                                    <source srcset="
+                                        ./images/project5-tab.jpg    1x,
+                                        ./images/project5-tab@2x.jpg 2x
+                                    " media="(min-width: 768px)" />
+                                    <source srcset="
+                                        ./images/project5-mob.jpg    1x,
+                                        ./images/project5-mob@2x.jpg 2x
+                                    " media="(min-width: 320px)" />
+                                    <img src="./images/project5.jpg" alt="Две коробки" width="370">
+                                </picture>
                                 <div class="portfolio-projects-overlay">
                                     <p class="portfolio-projects-overlay-text">Ресурс предлагает комплексные предложения с разным уровнем
                                         функционала и
@@ -154,7 +280,21 @@
                     <li class="portfolio-projects-item">
                         <a class="portfolio-projects-link link" href="" target="_blank" rel="noreferrer noopener nofollow">
                             <div class="portfolio-projects-thumb">
-                                <img src="./images/project6.jpg" alt="Монитор компьютера" width="370">
+                                <picture>
+                                    <source srcset="
+                                        ./images/project6.jpg    1x, 
+                                        ./images/project6@2x.jpg 2x
+                                        " media="(min-width: 1200px)" />
+                                    <source srcset="
+                                        ./images/project6-tab.jpg    1x,
+                                        ./images/project6-tab@2x.jpg 2x
+                                    " media="(min-width: 768px)" />
+                                    <source srcset="
+                                        ./images/project6-mob.jpg    1x,
+                                        ./images/project6-mob@2x.jpg 2x
+                                    " media="(min-width: 320px)" />
+                                    <img src="./images/project6.jpg" alt="Монитор компьютера" width="370">
+                                </picture>
                                 <div class="portfolio-projects-overlay">
                                     <p class="portfolio-projects-overlay-text">Ресурс предлагает комплексные предложения с разным уровнем
                                         функционала и
@@ -171,7 +311,21 @@
                     <li class="portfolio-projects-item">
                         <a class="portfolio-projects-link link" href="" target="_blank" rel="noreferrer noopener nofollow">
                             <div class="portfolio-projects-thumb">
-                                <img src="./images/project7.jpg" alt="Открытый журнал" width="370">
+                                <picture>
+                                    <source srcset="
+                                        ./images/project7.jpg    1x, 
+                                        ./images/project7@2x.jpg 2x
+                                        " media="(min-width: 1200px)" />
+                                    <source srcset="
+                                        ./images/project7-tab.jpg    1x,
+                                        ./images/project7-tab@2x.jpg 2x
+                                    " media="(min-width: 768px)" />
+                                    <source srcset="
+                                        ./images/project7-mob.jpg    1x,
+                                        ./images/project7-mob@2x.jpg 2x
+                                    " media="(min-width: 320px)" />
+                                    <img src="./images/project7.jpg" alt="Открытый журнал" width="370">
+                                </picture>
                                 <div class="portfolio-projects-overlay">
                                     <p class="portfolio-projects-overlay-text">Ресурс предлагает комплексные предложения с разным уровнем
                                         функционала и
@@ -188,7 +342,21 @@
                     <li class="portfolio-projects-item">
                         <a class="portfolio-projects-link link" href="" target="_blank" rel="noreferrer noopener nofollow">
                             <div class="portfolio-projects-thumb">
-                                <img src="./images/project8.jpg" alt="Бирка" width="370">
+                                <picture>
+                                    <source srcset="
+                                        ./images/project8.jpg    1x, 
+                                        ./images/project8@2x.jpg 2x
+                                        " media="(min-width: 1200px)" />
+                                    <source srcset="
+                                        ./images/project8-tab.jpg    1x,
+                                        ./images/project8-tab@2x.jpg 2x
+                                    " media="(min-width: 768px)" />
+                                    <source srcset="
+                                        ./images/project8-mob.jpg    1x,
+                                        ./images/project8-mob@2x.jpg 2x
+                                    " media="(min-width: 320px)" />
+                                    <img src="./images/project8.jpg" alt="Бирка" width="370">
+                                </picture>
                                 <div class="portfolio-projects-overlay">
                                     <p class="portfolio-projects-overlay-text">Ресурс предлагает комплексные предложения с разным уровнем
                                         функционала и
@@ -205,7 +373,21 @@
                     <li class="portfolio-projects-item">
                         <a class="portfolio-projects-link link" href="" target="_blank" rel="noreferrer noopener nofollow">
                             <div class="portfolio-projects-thumb">
-                                <img src="./images/project9.jpg" alt="Работа за ноутбуком" width="370">
+                                <picture>
+                                    <source srcset="
+                                        ./images/project9.jpg    1x, 
+                                        ./images/project9@2x.jpg 2x
+                                        " media="(min-width: 1200px)" />
+                                    <source srcset="
+                                        ./images/project9-tab.jpg    1x,
+                                        ./images/project9-tab@2x.jpg 2x
+                                    " media="(min-width: 768px)" />
+                                    <source srcset="
+                                        ./images/project9-mob.jpg    1x,
+                                        ./images/project9-mob@2x.jpg 2x
+                                    " media="(min-width: 320px)" />
+                                    <img src="./images/project9.jpg" alt="Работа за ноутбуком" width="370">
+                                </picture>
                                 <div class="portfolio-projects-overlay">
                                     <p class="portfolio-projects-overlay-text">Ресурс предлагает комплексные предложения с разным уровнем
                                         функционала и
